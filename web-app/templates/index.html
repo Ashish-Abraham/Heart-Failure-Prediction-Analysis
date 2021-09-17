@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Heart Health Status</title>
+    <title> Heart Health Status </title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
   </head>
 
@@ -11,21 +11,24 @@
 
       <div class="box">
 
-        <p>According to the clinical data, the risk of heart failue in a patient.</p>
+        <h1> Heart Health Status</h1>
+
+        <p>Enter the data from your lab report to know your heart health condition</p>
 
         <form action="{{ url_for('predict')}}" method="post">
           <input type="text" name="age" placeholder="Patient Age" required="required" />
-          <input type="text" name="anaemia" placeholder="Anaemia(Yes or No)" required="required" />
+          <input type="text" name="anaemia" placeholder="Anaemia(Yes(1)/No(0))" required="required" />
           <input type="text" name="creatinine_phosphokinase" placeholder="Creatinine Phosphokinase" required="required" />
-          <input type="text" name="diabetes" placeholder="Diabetes(Yes or No)" required="required" />
+          <input type="text" name="diabetes" placeholder="Diabetes(Yes(1)/No(0))" required="required" />
           <input type="text" name="ejection_fraction" placeholder="Ejection Fraction" required="required" />
-          <input type="text" name="high_blood_pressure" placeholder="Blood Pressure above 129/80?(Yes or No)" required="required" />
+          <input type="text" name="high_blood_pressure" placeholder="Blood Pressure above 129/80?(Yes(1)/No(0))" required="required" />
           <input type="text" name="platelets" placeholder="Platelets" required="required" />
           <input type="text" name="serum_creatinine" placeholder="Serum Creatinine" required="required" />
           <input type="text" name="serum_sodium" placeholder="Serum Sodium" required="required" />
-          <input type="text" name="sex" placeholder="Patient Gender(M or F)" required="required" />
-          <input type="text" name="smoking" placeholder="Smoking (Yes or No)" required="required" />
-          <button type="submit" class="btn">Predict risk of heart failure</button>
+          <input type="text" name="sex" placeholder="Patient Gender(M(1)/F(0))" required="required" />
+          <input type="text" name="smoking" placeholder="Smoking (Yes(1)/No(0))" required="required" />
+          <br><br>
+          <button type="submit" class="btn">Submit</button>
         </form>
 
         <p>{{ prediction_text }}</p>
