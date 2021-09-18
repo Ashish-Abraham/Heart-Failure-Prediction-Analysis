@@ -1,4 +1,11 @@
 scikit-learn
 pandas
 numpy
-flask
+Flask
+click
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug
+
