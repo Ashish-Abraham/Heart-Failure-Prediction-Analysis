@@ -23,7 +23,8 @@ def predict():
     else:
         output="You are in low risk of Heart Failure Make sure to be fit with healthy diet and exercise"    
 
-    return render_template("index.html", prediction_text=output)
+    if float_features:
+        return render_template("index.html", prediction_text=output)
     
 
 
