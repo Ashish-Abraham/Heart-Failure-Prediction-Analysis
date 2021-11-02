@@ -12,5 +12,6 @@ Upload the python notebook in the folder **'model'** to Google Colab and run eac
 ## How to use:
 * Clone repository to local machine and run app.py in folder web app or open https://heart-status.herokuapp.com/ to take a quick look.
 * You can make changes in app.py and web-app folder and host it to use as an api in any application.
+![Image](https://github.com/Ashish-Abraham/Heart-Failure-Prediction-Analysis/blob/main/web-app/scr1.png)
 
 ## *Thanks for reading the Documentation. Open to suggestions if any.*
